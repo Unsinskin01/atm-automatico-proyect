@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://st3.depositphotos.com/13324256/16538/i/450/depositphotos_165381128-stock-photo-dollar-banknotes-background.jpg');
+    background-color: rgba(255, 255, 255, 0.8);
+    background-size: cover;
+  }
+  
+  .atm {
+    border: 2px solid #000;
+    border-radius: 10px;
+    width: 320px;
+     background-color: rgba(255, 255, 255, 0.2); /* Modifica el valor de '0.5' para ajustar la transparencia (0: completamente transparente, 1: completamente opaco) */
+    padding: 20px;
+    text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .account-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #45a049;
+  }
+  .return-button {
+    margin-top: 20px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .input-field {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 60%;
+  }
+  
+  .error-msg {
+    color: #ff0000;
+    margin-bottom: 10px;
+  }
+  
+  .operation-result {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .hidden {
+    display: none;
+  }

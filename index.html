@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cajero Automático</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="atm">
+  <h1>Bienvenido al Cajero Automático</h1>
+  <div class="account-list">
+    <button onclick="selectAccount(1)">Erick</button>
+    <button onclick="selectAccount(2)">Samuel</button>
+    <button onclick="selectAccount(3)">Jesus</button>
+  </div>
+
+  <div id="account-info" class="hidden">
+    <h2>Ingrese su contraseña:</h2>
+    <input type="password" id="password" class="input-field">
+    <button onclick="verifyPassword()" class="button">Ingresar</button>
+    <p id="password-error" class="error-msg hidden">Contraseña incorrecta. Inténtalo de nuevo.</p>
+  </div>
+
+  <div id="operations" class="hidden">
+    <h2>Opciones:</h2>
+    <button onclick="checkBalance()" class="button">Consultar Saldo</button>
+    <button onclick="depositAmount()" class="button">Ingresar Monto</button>
+    <button onclick="withdrawAmount()" class="button">Retirar Monto</button>
+    <p id="operation-result" class="operation-result"></p>
+    <button onclick="returnToHome()" class="button return-button " "hidden">Volver al inicio</button>
+  </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
